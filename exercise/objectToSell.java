@@ -4,11 +4,13 @@ public class objectToSell {
 	private String objectName;
 	private Double objectValue;
 	private Integer objectQuantity;
+	private String objectType;
 	
-	public objectToSell(String objectName, Double objectValue, Integer objectQuantity) {
+	public objectToSell(String objectName, Double objectValue, Integer objectQuantity, String objectType) {
 		this.objectName = objectName;
 		this.objectValue = objectValue;
 		this.objectQuantity = objectQuantity;
+		this.objectType = objectType;
 	}
 
 	public String getObjectName() {
@@ -33,6 +35,14 @@ public class objectToSell {
 
 	public void setObjectQuantity(Integer objectQuantity) {
 		this.objectQuantity = objectQuantity;
+	}
+	
+	public String getObjectType() {
+		return objectType;
+	}
+
+	public void setObjectType(String objectType) {
+		this.objectType = objectType;
 	}
 	
 	public Double total(objectToSell objectParam) {
